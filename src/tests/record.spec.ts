@@ -6,7 +6,7 @@ import {
     undoRecord,
     clearRecord,
     rollbackRecord
-} from "../record.ts";
+} from "../core/record.ts";
 
 describe("record", () => {
     beforeEach(() => {

@@ -7,6 +7,9 @@ export class Stack<T> {
     }
 
     push(val: T){
+        if (this.list.length >= 6) {
+            this.list.shift();
+        }
         this.list.push(val)
     }
 
@@ -24,6 +27,10 @@ export class Stack<T> {
 
     map<U>(callback: (val: T, index: number) => U){
         return this.list.map(callback)
+    }
+
+    shift(){
+        return this.list.shift()
     }
 
     isEmpty(){

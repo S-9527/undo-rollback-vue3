@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import {addRecord, getRollbackStack, getUndoStack, rollbackRecord, undoRecord} from "./record.ts";
+import {addRecord, getRollbackStack, getUndoStack, rollbackRecord, undoRecord} from "./core/record.ts";
 import {computed} from "vue";
 
 const undoList = computed(() => {
